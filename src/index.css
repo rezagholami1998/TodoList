@@ -8,8 +8,8 @@
     font-style: normal;
     font-display: swap;
     font-family: IRANSansXFaNum-medium;
-    src: url("./assets/fonts/woff/IRANSansXFaNum-Medium.woff") format("woff"),
-      url("./assets/fonts/woff2/IRANSansXFaNum-Medium.woff2") format("woff2");
+    src: url("./assets/fonts/IRANSansXFaNum-Medium.woff") format("woff"),
+      url("./assets/fonts/IRANSansXFaNum-Medium.woff2") format("woff2");
   }
 }
 html,
