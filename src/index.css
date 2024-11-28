@@ -1,16 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* define font */
 @layer base {
-  @font-face {
-    font-weight: 300;
-    font-display: swap;
-    font-style: normal;
-    font-family: IRANSansXFaNum-regular;
-    src: url("./assets/fonts/woff/IRANSansXFaNum-Regular.woff") format("woff"),
-      url("./assets/fonts/woff2/IRANSansXFaNum-Regular.woff2") format("woff2");
-  }
   @font-face {
     font-weight: 400;
     font-style: normal;
@@ -18,14 +10,6 @@
     font-family: IRANSansXFaNum-medium;
     src: url("./assets/fonts/woff/IRANSansXFaNum-Medium.woff") format("woff"),
       url("./assets/fonts/woff2/IRANSansXFaNum-Medium.woff2") format("woff2");
-  }
-  @font-face {
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-    font-family: IRANSansXFaNum-bold;
-    src: url("./assets/fonts/woff/IRANSansXFaNum-Bold.woff") format("woff"),
-      url("./assets/fonts/woff2/IRANSansXFaNum-Bold.woff2") format("woff2");
   }
 }
 html,
@@ -37,6 +21,7 @@ body,
 body {
   font-family: IRANSansXFaNum-medium;
 }
+/* define animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -52,4 +37,17 @@ body {
 }
 .animate-fadeInUp {
   animation: fadeInUp 1s;
+}
+/* change style scroll todoList */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
