@@ -3,8 +3,8 @@ import { useTodoStore } from "../store/useTodoStore";
 import TodoList from "../components/TodoList";
 /////////////////////////////////////////////////////
 const Home = () => {
-  const [newTodo, setNewTodo] = useState("");
-  const [searchTerm, setSearchTerm] = useState("");
+  const [newTodo, setNewTodo] = useState<string>("");
+  const [searchTerm, setSearchTerm] = useState<string>("");
   const { todos, getTodos, addTodo, deleteTodo } = useTodoStore();
   //////////////////// for fetch data and use lifecycle (until change data)
   useEffect(() => {

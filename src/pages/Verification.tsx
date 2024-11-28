@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 ////////////////////////////
 const Verification = () => {
   const navigate = useNavigate();
-  const [inputs, setInputs] = useState(["", "", "", ""]);
+  const [inputs, setInputs] = useState<string[]>(["", "", "", ""]);
   //////////////////////////  for set value inputs
-  const handleChange = (e, index) => {
+  const handleChange = (e, index: number) => {
+    console.log(typeof index);
     const value = e.target.value;
     if (!isNaN(value)) {
       const newValue = [...inputs];

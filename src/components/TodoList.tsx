@@ -1,4 +1,12 @@
-const TodoList = ({ description, keyItem, onClick }) => {
+import { FC } from "react";
+interface Iprops {
+  description: string;
+  keyItem: string;
+  onClick: React.MouseEventHandler;
+}
+////////////////////////////////////////////////////////////////////////////
+//Component
+const TodoList: FC<Iprops> = ({ description, keyItem, onClick }) => {
   return (
     <>
       <li
